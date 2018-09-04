@@ -2,10 +2,12 @@ package postgres
 
 import "github.com/user/work/foosball-booking/date"
 
-//User table for storing user data
-type User struct {
-	UserID   int    `json:"userID"`
-	UserName string `json:"userName"`
+
+
+//Employee table for storing Employee data
+type Employee struct {
+	EmployeeID   int    `json:"employeeID"`
+	EmployeeName string `json:"employeeName"`
 }
 
 //Admin table
@@ -34,3 +36,4 @@ type Period struct {
 	Date     date.Date `json:"date"`
 	Slot     []Slot    `json:"slot"`
 }
+

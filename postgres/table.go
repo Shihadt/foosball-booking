@@ -18,8 +18,8 @@ func (d *Driver) useDataBase() error {
 // This function should call at begining of the program execution.
 func (d *Driver) createTableIfNotExits() error {
 	qry := ` CREATE TABLE IF NOT EXISTS employee (
-		userID serial PRIMARY KEY,
-		UserName VARCHAR(50)
+		employeeID serial PRIMARY KEY,
+		employeeName VARCHAR(50)
 	);`
 	if _, err := d.driver.Exec(qry); err != nil {
 		return err
