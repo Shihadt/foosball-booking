@@ -1,0 +1,25 @@
+# TOML config file.
+[development]
+Server              =   "0.0.0.0:8080"
+PostgresHost        =   "127.0.0.1"
+PostgresUser	    =   "postgres"
+PostgresPassword	=   "admin"
+Database            =   "foosball"
+LogLevel            =   2
+
+[test]
+Server              =   "0.0.0.0:8080"
+PostgresHost        =   "127.0.0.1"
+PostgresUser	    =   "postgres"
+PostgresPassword	=   "admin"
+Database            =   "test"
+LogLevel            =   4
+
+
+[production]
+Server              =   "0.0.0.0:8080"
+PostgresHost        =   "127.0.0.1"
+PostgresUser	    =   "postgres"
+PostgresPassword	=   "admin"
+Database            =   "foosball"
+LogLevel            =   4
