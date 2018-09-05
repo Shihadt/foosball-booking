@@ -23,25 +23,25 @@ type Driver struct {
 //DefualtDriver for postgres
 var DefualtDriver = Driver{
 	DBUser:     "postgres",
-	DBPassword: "postgres",
+	DBPassword: "admin",
+	DBName:     "foosball",
 }
 
 func init() {
-	DefualtDriver.connect()
+	DefualtDriver.Connect()
 }
 
 //Connect Database and return DB instance
-func (d *Driver) connect() error {
+func (d *Driver) Connect() error {
 	qry := "user=" + d.DBUser + " password=" + d.DBPassword
 	if d.DBName != "" {
 		qry += " dbname=" + d.DBName
 	}
 	qry += " sslmode=disable"
 
-	db, err := sql.Open("postgres", qry)
+	db, _ := sql.Open("postgres", qry)
 	d.driver = db
-
-	return err
+	return d.driver.Ping()
 }
 
 //Close the driver
@@ -51,15 +51,9 @@ func (d *Driver) Close() {
 
 //Initialize driver
 func (d *Driver) Initialize() error {
-	if err := d.connect(); err != nil {
+	if err := d.Connect(); err != nil {
 		return err
 	}
-	// if err := d.createDatabaseIfNotExist(); err != nil {
-	// 	return err
-	// }
-	// if err := d.useDataBase(); err != nil {
-	// 	return err
-	// }
 	if err := d.createTableIfNotExits(); err != nil {
 		return err
 	}

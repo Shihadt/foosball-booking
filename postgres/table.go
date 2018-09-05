@@ -2,17 +2,17 @@ package postgres
 
 // CreateDatabaseIfNotExist is to create db if its not exists.
 // This function should call at begining of the program execution.
-func (d *Driver) createDatabaseIfNotExist() error {
-	qry := "CREATE DATABASE IF NOT EXISTS " + d.DBName + ";"
-	_, err := d.driver.Exec(qry)
-	return err
-}
+// func (d *Driver) createDatabaseIfNotExist() error {
+// 	qry := "CREATE DATABASE IF NOT EXISTS " + d.DBName + ";"
+// 	_, err := d.driver.Exec(qry)
+// 	return err
+// }
 
-func (d *Driver) useDataBase() error {
-	qry := "USE " + d.DBName
-	_, err := d.driver.Exec(qry)
-	return err
-}
+// func (d *Driver) useDataBase() error {
+// 	qry := "USE " + d.DBName
+// 	_, err := d.driver.Exec(qry)
+// 	return err
+// }
 
 // CreateTableIfNotExits will create all tables for the project if not exists.
 // This function should call at begining of the program execution.

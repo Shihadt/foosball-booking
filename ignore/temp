@@ -1,0 +1,166 @@
+{
+   "_id" : ObjectId("595b128128d15f1c8e76a374"),
+   "userId" : "2821",
+   "emailId" : "emailid@qburst.com",
+   "firstName" : "First name",
+   "lastName" : "Second name",
+   "designation" : "Tester",
+   "permissions" : {
+       "beacons" : {
+           "add" : [
+
+           ],
+           "delete" : [
+
+           ],
+           "edit" : [
+
+           ],
+           "read" : [
+               "KTY1"
+           ],
+           "transfer" : [
+
+           ]
+       },
+       "device" : {
+           "add" : [
+
+           ],
+           "delete" : [
+
+           ],
+           "edit" : [
+
+           ],
+           "read" : [
+               "KTY1"
+           ],
+           "transfer" : [
+
+           ]
+       },
+       "region" : {
+           "add" : [
+
+           ],
+           "delete" : [
+
+           ],
+           "edit" : [
+
+           ],
+           "read" : [
+
+           ],
+           "transfer" : [
+
+           ]
+       },
+       "section" : {
+           "add" : [
+
+           ],
+           "delete" : [
+
+           ],
+           "edit" : [
+
+           ],
+           "read" : [
+               "KTY1"
+           ],
+           "transfer" : [
+
+           ]
+       },
+       "user" : {
+           "add" : [
+
+           ],
+           "delete" : [
+
+           ],
+           "edit" : [
+
+           ],
+           "read" : [
+
+           ],
+           "transfer" : [
+
+           ]
+       },
+       "asset" : {
+           "add" : [
+
+           ],
+           "delete" : [
+
+           ],
+           "edit" : [
+
+           ],
+           "read" : [
+               "KTY1"
+           ],
+           "transfer" : [
+
+           ],
+           "assign" : [
+               "KTY1"
+           ],
+           "unassign" : [
+               "KTY1"
+           ],
+           "reassign" : [
+               "KTY1"
+           ]
+       },
+       "attendance" : {
+           "read" : [
+
+           ],
+           "edit" : [
+
+           ],
+           "delete" : [
+
+           ]
+       }
+   },
+   "verified" : true,
+   "verificationToken" : null,
+   "createdAt" : ISODate("1900-01-01T01:01:01.941+0530"),
+   "isActive" : true,
+   "isDeleted" : false,
+   "updatedAt" : ISODate("1900-01-01T01:01:01.946+0530"),
+   "password" : {
+       "hash" : "password hash value",
+       "salt" : "hash salt value"
+   },
+   "region" : {
+       "addedAt" : "KTY1",
+       "currentlyAt" : "KTY1"
+   },
+   "preferences" : {
+       "email" : {
+           "allocation" : true,
+           "deallocation" : true
+       }
+   },
+   "technology" : null,
+   "__v" : NumberInt(0),
+   "loginStat" : {
+       "failed" : NumberInt(0)
+   },
+   "isAdmin" : false,
+   "accessTokens" : [
+       {
+           "issuedAt" : ISODate("1900-01-01T01:02:01.747+0530"),
+           "token" : "<token value",
+           "clientType" : "web",
+           "clientId" : "5mvx72l"
+       }
+   ]
+}
